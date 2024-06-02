@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import ThemeContextAPI from './context/ThemeContextAPI';
+import CustomCursorManager from "../src/context/Manager"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <CustomCursorManager>
     <ThemeContextAPI>
     <App />
     </ThemeContextAPI>
+    </CustomCursorManager>
   </React.StrictMode>
 );
 
