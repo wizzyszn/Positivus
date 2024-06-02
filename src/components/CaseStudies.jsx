@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import arrow3 from "../assets/navigations/arrow3.png"
+import { ThemeContext } from '../context/ThemeContextAPI'
 export default function CaseStudies() {
+const {theme} = useContext(ThemeContext)
   return (
     <div className=' mt-20'>
     <div className=' flex items-center gap-6  '>
-    <span className=' p-1 bg-[#B9FF66] text-3xl font-semibold rounded-lg'>Case Studies</span>
+    <span className={` p-1 bg-[#B9FF66] text-3xl font-semibold rounded-lg ${theme ==="dark" ? " text-black" : 'text-black'}`}>Case Studies</span>
     <p className=' w-1/2'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
     </div>
     <div className=' grid grid-cols-3 bg-[#191A23] text-[#F3F3F3]  p-20 rounded-3xl gap-7 mt-14 text-lg'>

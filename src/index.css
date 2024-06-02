@@ -9,8 +9,11 @@ body{
   font-family: "Space Grotesk", sans-serif;
   background-color: #F3F3F3;
 }
-a:hover{
+.lemonborder a:hover{
  border-bottom: 2px solid #B9FF66;
+}
+.blackborder a:hover{
+ border-bottom: 2px solid black;
 }
 
 .light{

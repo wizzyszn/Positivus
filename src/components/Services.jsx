@@ -8,9 +8,10 @@ import vector7 from '../assets/vectors/tokyo.png'
 import arrow1 from '../assets/navigations/Icon-1.png'
 import arrow2 from '../assets/navigations/Icon.png'
 import image1 from "../assets/images/Illustration.png"
-//import { ThemeContext } from '../context/ThemeContextAPI'
+import { ThemeContext } from '../context/ThemeContextAPI'
+import { useContext } from 'react'
 export default function Services() {
-  //const {theme} = useContext(ThemeContext)
+  const {theme} = useContext(ThemeContext)
   const cards = [
     {
       title : 'Search engine optimization',
@@ -83,7 +84,7 @@ export default function Services() {
   return (
     <div className=' mt-24 min-h-[1200px]'>   
     <div className=' flex items-center gap-6 w-1/2  '>
-    <span className=' p-1 bg-[#B9FF66] text-3xl font-semibold rounded-lg'>Services</span>
+    <span className={`${theme ==="dark" ? " text-black" : 'text-black'} p-1 bg-[#B9FF66] text-3xl font-semibold rounded-lg`}>Services</span>
     <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
     </div>
     <div className=' grid grid-cols-2 gap-6 m-h-fit mt-8 '>

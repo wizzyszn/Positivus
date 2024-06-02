@@ -5,7 +5,7 @@ import { ThemeContext } from '../context/ThemeContextAPI'
 export default function Navbar() {
   const {theme} = useContext(ThemeContext)
   return (
-    <div className=' flex justify-between items-center p-2'>
+    <div className={`flex justify-between items-center p-2  ${theme ==="light"?"blackborder" : 'lemonborder'}`}>
         <Logo />
         <div className=' flex gap-16 items-center '>
         <ThemeToggle />
