@@ -29,3 +29,36 @@ body{
 .dark button{
   border : 1px solid #B9FF66;
 }
+.dark button:hover{
+  background-color:  #B9FF66;
+  color: black;
+  transition:all .2s ease;
+}
+.custom-radio {
+  cursor: pointer; /* Indicate clickable element on hover */
+  width: 30px;
+  height: 30px;
+ 
+  
+}
+
+.custom-radio input {
+  position: absolute; /* Hide the default radio button */
+  opacity: 0; /* Completely hide the default button */
+
+  
+}
+
+.custom-radio:before {
+  content: ""; /* Create a pseudo-element for the button */
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc; /* Set border for the radio button */
+  border-radius: 50%; /* Create a circular radio button */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.custom-radio:checked:before {
+  background-color: #B9FF66 /* Change color when radio is checked */
+}

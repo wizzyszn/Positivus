@@ -5,7 +5,7 @@ export default function Subtraction({ activeAccordios, index }) {
   const { theme } = useContext(ThemeContext);
 
   const fillColor = theme === "light" || (theme === "dark" && activeAccordios.includes(index)) ? "#191A23" : "white";
-  console.log("Check : ", fillColor);
+
 
   return (
     <svg 

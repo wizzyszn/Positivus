@@ -1,12 +1,7 @@
     
 export default function Bubble({ testimony = {} }) {
   const { name = 'Anonymous', comment = 'No comment available', position = 'Unknown position' } = testimony;
-  console.log("details: ", {
-    name: name,
-    comment: comment,
-    position: position,
-  });
-
+ 
   // Function to split text into lines
   const splitTextIntoLines = (text, maxLineLength) => {
     const words = text.split(' ');

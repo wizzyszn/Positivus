@@ -4,7 +4,7 @@ import { ThemeContext } from '../../context/ThemeContextAPI'
 export default function Logo() {
   const {theme} = useContext(ThemeContext)
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="56" viewBox="0 0 220 56" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="56" viewBox="0 0 220 56" fill="none" >
     <g clipPath="url(#clip0_330_1193)">
     <g clipPath="url(#clip1_330_1193)">
     <path d="M17.9986 15.5347L35.5997 10.3491L30.464 28.0001L35.5997 45.6012L17.9986 40.4655L0.347656 45.6012L5.53325 28.0001L0.347656 10.3491L17.9986 15.5347Z" fill={theme=== "light" ? "black" : "white"}/>

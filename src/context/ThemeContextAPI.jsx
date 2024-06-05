@@ -14,11 +14,13 @@ export default function ThemeContextAPI({children}) {
   const toggle = () =>{
     setTheme(theme === 'light' ? "dark" : 'light');
     //localStorage.setItem("theme", theme)
+
+    return localStorage.removeItem("theme")
   }
-  console.log(theme)
   return (
    <ThemeContext.Provider value={{theme, toggle}}>
     {children}
    </ThemeContext.Provider>
   )
 }
+

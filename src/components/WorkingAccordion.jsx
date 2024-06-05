@@ -8,7 +8,7 @@ export default function WorkingAccordion () {
     const [activeAccordions, setActiveAccordions] = useState([]);
      const {theme} = useContext(ThemeContext)
    return (
-    <div className=' mt-16'>
+    <div className=' mt-16' id='goals'>
       <div className=' flex items-center gap-6   '>
         <span className={`${theme ==="light" ? " text-black" : 'text-black'} p-1 bg-[#B9FF66] text-3xl font-semibold rounded-lg`}>
           Our Working Process{' '}
@@ -27,7 +27,7 @@ export default function WorkingAccordion () {
                 }
               }}
               key={index}
-              className={` shadow-md shadow-black flex w-full border rounded-[50px] border-black overflow-hidden flex-col p-16 gap-7 cursor-pointer ${ activeAccordions.includes(index) ? "bg-[#B9FF66] text-black" : ''} `}
+              className={` shadow-md shadow-black flex w-full border rounded-[50px] border-black overflow-hidden flex-col p-16 gap-7 cursor-pointer hover:text-black hover:bg-[#B9FF66] ${ activeAccordions.includes(index) ? "bg-[#B9FF66] text-black" : ''} `}
             >
               <div className=' w-full items-center flex justify-between'>
                 <div className=' flex gap-5 items-center'>

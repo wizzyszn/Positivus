@@ -82,35 +82,38 @@ export default function Services() {
   },
 ]
   return (
-    <div className=' mt-24 min-h-[1200px]'>   
-    <div className=' flex items-center gap-6 w-1/2  '>
+    <div className=' mt-24 min-h-[1200px]' id='services'>   
+    <div className=' flex items-center gap-6 w-1/2  max-sm:flex-col max-sm:w-full'>
     <span className={`${theme ==="dark" ? " text-black" : 'text-black'} p-1 bg-[#B9FF66] text-3xl font-semibold rounded-lg`}>Services</span>
     <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
     </div>
-    <div className=' grid grid-cols-2 gap-6 m-h-fit mt-8 '>
+    <div className=' grid grid-cols-2 gap-6 m-h-fit mt-8 max-sm:grid-cols-1 '>
       {
         cards.map((elem, index) =>{
-          return <div key={index} className={` grid grid-cols-2 ${elem.bg} p-9 rounded-3xl shadow-black h-[350px] shadow-lg`}>
-            <div className=' flex flex-col justify-between'>
-              <h3 className={`${elem.textBg}  text-3xl w-1/2 font-semibold text-black p-2`}>{elem.title}</h3>
-              <div
-              className=' flex gap-4 items-center'
-              ><img src={elem.icon} alt="arrow" /> <span className={`${elem.textColor} text-lg`}>{elem.text}</span></div>
+          return <div key={index} className={` grid grid-cols-2 ${elem.bg} p-9 rounded-3xl shadow-black h-[350px] shadow-lg grid-rows-2 `}>
+            <div className=' flex flex-col justify-between col-span-1 row-span-1 max-sm:col-span-2 '>
+              <h3 className={`${elem.textBg}  text-3xl w-1/2 max-sm:w-full font-semibold text-black p-2 `}>{elem.title}</h3>
             </div>
-            <div className=' flex justify-center items-center'>
+
+            <div
+              className=' flex gap-4 items-end col-start-1 '
+              ><img src={elem.icon} alt="arrow" /> <span className={`${elem.textColor} text-lg max-sm:hidden`}>{elem.text}</span>
+            </div>
+
+            <div className=' flex justify-center items-center col-start-2 col-end-3 row-start-1 row-end-3 max-sm:col-start-2 max-sm:col-end-3 max-sm:row-start-2 max-sm:end-3  sm:items-end'>
             <div><img src={elem.vector} alt="vector" /></div>
             </div>
              </div>
         })
       }
     </div> 
-    <div className=' grid grid-cols-2 mt-16 pl-[5%]'>
-      <div className=' flex justify-center flex-col self-center gap-4'>
+    <div className=' grid grid-cols-2 mt-16 pl-[5%] bg-[#89898933] min-h-[35rem] max-sm:min-h-[20rem]'>
+      <div className=' flex justify-center flex-col self-center gap-4 max-sm:col-span-2'>
         <h3 className=' text-3xl'>Let’s make things happen</h3>
         <p className=''>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
-        <button className=' w-fit p-3 bg-[#191A23] text-[#F3F3F3] rounded-lg'>Get your free proposal</button>
+        <button className=' w-fit p-3 bg-[#191A23] text-[#F3F3F3] rounded-lg max-sm:w-full'>Get your free proposal</button>
       </div>
-      <div className=' flex justify-center'><img src={image1} alt="img1" /></div>
+      <div className=' max-sm:hidden flex justify-center'><img src={image1} alt="img1" /></div>
     </div>
   </div>
   )
