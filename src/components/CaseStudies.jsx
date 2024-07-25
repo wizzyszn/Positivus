@@ -7,7 +7,7 @@ const {theme} = useContext(ThemeContext)
     <div className=' mt-20' id='case-studies'>
     <div className=' flex items-center gap-6 max-sm:flex-col '>
     <span className={` p-1 bg-[#B9FF66] text-3xl font-semibold rounded-lg ${theme ==="dark" ? " text-black" : 'text-black'}`}>Case Studies</span>
-    <p className=' w-1/2 max-sm:w-full'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+    <p className=' w-1/2 max-sm:w-full max-sm:text-center'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
     </div>
     <div className=' grid grid-cols-3 max-sm:grid-cols-1 bg-[#191A23] text-[#F3F3F3]  p-20 rounded-3xl gap-7 mt-14 text-lg max-sm:p-9 max-sm:gap-12'>
         <div className=' border-r-2 border-white flex max-sm:border-none flex-col gap-3'>

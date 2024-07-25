@@ -9,7 +9,7 @@ export default function WorkingAccordion () {
      const {theme} = useContext(ThemeContext)
    return (
     <div className=' mt-16' id='goals'>
-      <div className=' flex items-center gap-6   '>
+      <div className=' flex items-center gap-6 max-sm:flex-col max-sm:text-center'>
         <span className={`${theme ==="light" ? " text-black" : 'text-black'} p-1 bg-[#B9FF66] text-3xl font-semibold rounded-lg`}>
           Our Working Process{' '}
         </span>
@@ -27,12 +27,12 @@ export default function WorkingAccordion () {
                 }
               }}
               key={index}
-              className={` shadow-md shadow-black flex w-full border rounded-[50px] border-black overflow-hidden flex-col p-16 gap-7 cursor-pointer hover:text-black hover:bg-[#B9FF66] ${ activeAccordions.includes(index) ? "bg-[#B9FF66] text-black" : ''} `}
+              className={` shadow-md shadow-black flex w-full border rounded-[50px] border-black overflow-hidden flex-col p-16 max-sm:p-8 gap-7 cursor-pointer hover:text-black hover:bg-[#B9FF66] ${ activeAccordions.includes(index) ? "bg-[#B9FF66] text-black" : ''} `}
             >
               <div className=' w-full items-center flex justify-between'>
                 <div className=' flex gap-5 items-center'>
-                  <h2 className=' text-5xl font-semibold'>{`0${elem.id}`}</h2>
-                  <h3 className='text-2xl font-semibold'>{elem.title}</h3>
+                  <h2 className=' text-5xl max-sm:text-2xl font-semibold'>{`0${elem.id}`}</h2>
+                  <h3 className='text-2xl font-semibold max-sm:text-lg'>{elem.title}</h3>
                 </div>
                 <span>
                     {
@@ -40,7 +40,7 @@ export default function WorkingAccordion () {
                     }
                 </span>
               </div>
-              <div className={` border-t-2 border-black p-3`}
+              <div className={` border-t-2 border-black p-3 max-sm:p-0 max-sm:text-sm`}
               style={{
                 display : activeAccordions.includes(index) ? "block" : 'none'
 

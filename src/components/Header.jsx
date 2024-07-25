@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div className=' grid grid-cols-2 mt-20  max-sm:gap-9 max-sm:mt-11'>
         <div className='flex flex-col gap-8 w-[80%] max-sm:w-full max-sm:col-span-2'>
-        <h1 className=' max-sm:text-6xl text-7xl font-medium'>Navigating the digital landscape for success</h1>
+        <h1 className=' max-sm:text-5xl text-7xl font-medium'>Navigating the digital landscape for success</h1>
         <p className=' text-lg w-[90%] max-sm:w-full'>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
             <button className=' w-fit p-3 bg-black text-white rounded-lg max-sm:w-full'>Book a consultation</button>
         </div>

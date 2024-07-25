@@ -111,7 +111,7 @@ export default function Services() {
       <div className=' flex justify-center flex-col self-center gap-4 max-sm:col-span-2'>
         <h3 className=' text-3xl'>Let’s make things happen</h3>
         <p className=''>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
-        <button className=' w-fit p-3 bg-[#191A23] text-[#F3F3F3] rounded-lg max-sm:w-full'>Get your free proposal</button>
+        <button className=' w-fit p-3 bg-[#191A23] text-[#F3F3F3] rounded-lg '>Get your free proposal</button>
       </div>
       <div className=' max-sm:hidden flex justify-center'><img src={image1} alt="img1" /></div>
     </div>
