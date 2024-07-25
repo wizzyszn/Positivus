@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Drawer } from 'antd';
 import ThemeToggle from '../ThemeToggle';
-import { Link } from 'react-router-dom';
 import Logo from '../svg/Logo';
 import { ThemeContext } from '../../context/ThemeContextAPI';
 import { NavBarContext } from '../../context/NavbarContext';
