@@ -3,8 +3,7 @@ import Logo from '../components/svg/Logo'
 import ThemeToggle from './ThemeToggle'
 import { ThemeContext } from '../context/ThemeContextAPI'
 import BuggerMenu from './svg/BuggerMenu'
-import { Link } from 'react-scroll';
-import Links from './ANT/Links'
+import Links from './Links'
 export default function Navbar() {
   const {theme} = useContext(ThemeContext)
   return (

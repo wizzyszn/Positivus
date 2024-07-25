@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-scroll'
-import { ThemeContext } from '../../context/ThemeContextAPI'
+import { ThemeContext } from '../context/ThemeContextAPI'
 
 export default function Links() {
     const {theme} = useContext(ThemeContext)

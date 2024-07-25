@@ -1,10 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import { Drawer } from 'antd';
 import ThemeToggle from '../ThemeToggle';
-import Logo from '../svg/Logo';
 import { ThemeContext } from '../../context/ThemeContextAPI';
 import { NavBarContext } from '../../context/NavbarContext';
-import Links from './Links';
+import Links from '../Links';
 const AppDrawer = () => {
     const {toggle,setToggle} = useContext(NavBarContext);
     console.log("toggle", toggle)
